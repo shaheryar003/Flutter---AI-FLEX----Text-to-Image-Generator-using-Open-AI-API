@@ -167,16 +167,17 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     Expanded(
                       child: Container(
-                        height: 44,
                         padding: const EdgeInsets.symmetric(
-                            horizontal: 16, vertical: 4),
+                            horizontal: 16, vertical: 0),
                         decoration: BoxDecoration(
                             color: whiteColor,
                             borderRadius: BorderRadius.circular(12)),
                         child: TextFormField(
+                          maxLines: null,
                           textAlign: TextAlign.left,
                           controller: textController,
                           decoration: InputDecoration(
+                            isDense: true,
                             hintText: "eg cat on moon",
                             hintStyle: TextStyle(fontSize: 15),
                             border: InputBorder.none,
@@ -320,7 +321,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               ? Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Text(
-                                      "Please wait while we bring image from heavens of AI"),
+                                      "Please wait while we make some shit"),
                                 )
                               : Padding(
                                   padding: const EdgeInsets.all(8.0),
